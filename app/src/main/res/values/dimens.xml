@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="def_margin">16dp</dimen>
+    <dimen name="image_size">56dp</dimen>
+</resources>

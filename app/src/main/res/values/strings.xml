@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Менеджер контактов</string>
+    <string name="enable">Включить</string>
+    <string name="no_permission">Для работы приложения, необходимо разрешить чтение контактов</string>
+    <string name="delete">Удалить</string>
+    <string name="save">Сохранить</string>
+    <string name="name">Имя</string>
+    <string name="number">Номер</string>
+    <string name="all_fields_is_req">Все поля должны быть заполнены!</string>
+    <string name="not_supported">Операция не дсотупна!</string>
+</resources>
