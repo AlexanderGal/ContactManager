@@ -46,7 +46,7 @@ public class ContactLoader extends AsyncTaskLoader<List<Contact>> {
             while (cursor.moveToNext()) {
                 Contact contact = new Contact();
                 contact.setmId(cursor.getLong(cursor.getColumnIndex(ContactsContract.Data._ID)));
-                contact.setmLabel(getString(cursor, ContactsContract.Contacts.DISPLAY_NAME));
+                contact.setmLabel(getString(cursor, ContactsContract.Contacts.DISPLAY_NAME_PRIMARY));
                 getPhoneNumber(cursor, contact);
                 list.add(contact);
             }

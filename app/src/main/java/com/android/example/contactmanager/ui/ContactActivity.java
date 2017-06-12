@@ -115,9 +115,9 @@ public class ContactActivity extends AppCompatActivity {
         ArrayList<ContentProviderOperation> ops = new ArrayList<>();
 
         //Name
-        ops.add(ContentProviderOperation.newUpdate(ContactsContract.Data.CONTENT_URI)
+        ops.add(ContentProviderOperation.newUpdate(ContactsContract.RawContacts.CONTENT_URI)
                 .withSelection(ContactsContract.Data.CONTACT_ID + "=?", new String[]{String.valueOf(mContactId)})
-                .withValue(ContactsContract.CommonDataKinds.StructuredName.DISPLAY_NAME, mContactNameET.getText().toString())
+                .withValue(ContactsContract.RawContacts.DISPLAY_NAME_PRIMARY, mContactNameET.getText().toString())
                 .build());
         //Number
         ops.add(ContentProviderOperation.newUpdate(ContactsContract.Data.CONTENT_URI)
